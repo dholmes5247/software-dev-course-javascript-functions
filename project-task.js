@@ -46,7 +46,7 @@ console.log("The sum of 5 and 10 is " + sum);
 let product = num1 * num2;
 console.log("The product of 5 and 10 is " + product);
 
-// Script 4 - Print names from a list
+/* Script 4 - Print names from a list
 let names = ["Alice", "Bob", "Charlie"];
 console.log("Names in the list:");
 for (let i = 0; i < names.length; i++) {
@@ -72,3 +72,44 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+
+/* Script 1 - Greeting multiple users
+console.log("Welcome, Alice!");
+console.log("Welcome, Bob!");
+console.log("Welcome, Charlie!"); */
+function greet(name){
+   console.log("hello, " + name + "!");
+}
+greet("Alice");
+greet("Bob");
+greet("Charlie");
+
+/* Script 2 - Sum calculation
+let num1 = 5, num2 = 10;
+let sum = num1 + num2;
+console.log("The sum of 5 and 10 is " + sum);*/
+
+function add(a, b){
+   return a + b;
+}function printSum(numA, numB) {
+   console.log(`The sum of ${numA} and ${numB} is ${add(numA, numB)}`);
+}
+printSum(6, 8);
+
+// Script 3 - Product calculation
+function multiply(a, b){
+   return a * b;
+}
+function printProduct(numA, numB) {
+   console.log(`The product of ${numA} and ${numB} is ${multiply(numA, numB)}`);
+}
+printProduct(6, 8);
+
+// Script 4 - Print names from a list
+let namesArr = ["Alice", "Bob", "Charlie"];
+function printNames(namesArr){
+   for (let i = 0; i < namesArr.length; i++){
+      console.log(namesArr[i]);
+   }
+}
+printNames(namesArr);
